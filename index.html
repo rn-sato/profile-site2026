@@ -25,7 +25,6 @@
       <a href="#about"><span>01</span> About</a>
       <a href="#profile"><span>02</span> Profile</a>
       <a href="#books"><span>03</span> Books</a>
-      <a href="#visitor"><span>04</span> Visitor</a>
     </nav>
   </header>
 
@@ -43,7 +42,12 @@
         <span class="hero__title-line hero__title-line--indent">I'M SATO.</span>
       </h1>
 
-      <p class="hero__copy">佐藤です。</p>
+      <div class="hero__intro">
+        <p class="hero__copy">佐藤です。</p>
+        <p class="hero__visitor">
+          あなたは <strong id="visitor-number" aria-live="polite">—</strong>人目の訪問者です
+        </p>
+      </div>
 
       <a class="hero__scroll" href="#about">
         <span>SCROLL</span>
@@ -192,21 +196,6 @@
       </div>
     </section>
 
-    <section class="visitor-section" id="visitor" aria-labelledby="visitor-title">
-      <div class="visitor-counter">
-        <p class="visitor-counter__label">04 / VISITOR COUNTER</p>
-
-        <h2 class="visitor-counter__title" id="visitor-title">
-          <span class="visitor-counter__prefix">あなたは</span>
-          <strong class="visitor-counter__number" id="visitor-number" aria-live="polite">—</strong>
-          <span class="visitor-counter__suffix">人目の訪問者です</span>
-        </h2>
-
-        <p class="visitor-counter__note">
-          この数字は初回アクセス時にランダム生成され、このブラウザ内に保存されます。
-        </p>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
