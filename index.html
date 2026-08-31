@@ -10,6 +10,7 @@
   <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
@@ -24,6 +25,7 @@
       <a href="#about"><span>01</span> About</a>
       <a href="#profile"><span>02</span> Profile</a>
       <a href="#books"><span>03</span> Books</a>
+      <a href="#visitor"><span>04</span> Visitor</a>
     </nav>
   </header>
 
@@ -189,11 +191,28 @@
         </div>
       </div>
     </section>
+
+    <section class="visitor-section" id="visitor" aria-labelledby="visitor-title">
+      <div class="visitor-counter">
+        <p class="visitor-counter__label">04 / VISITOR COUNTER</p>
+
+        <h2 class="visitor-counter__title" id="visitor-title">
+          <span class="visitor-counter__prefix">あなたは</span>
+          <strong class="visitor-counter__number" id="visitor-number" aria-live="polite">—</strong>
+          <span class="visitor-counter__suffix">人目の訪問者です</span>
+        </h2>
+
+        <p class="visitor-counter__note">
+          この数字は初回アクセス時にランダム生成され、このブラウザ内に保存されます。
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <a href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a>
     <p>RINA SATO / SELF INTRODUCTION</p>
   </footer>
+
 </body>
 </html>
