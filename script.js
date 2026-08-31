@@ -6,8 +6,8 @@
   }
 
   const storageKey = "rina-sato-visitor-number";
-  const minimum = 10000;
-  const maximum = 99999;
+  const minimum = 04;
+  const maximum = 55;
 
   const createVisitorNumber = () =>
     Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
