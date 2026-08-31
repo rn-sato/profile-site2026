@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="さとりなの自己紹介サイト">
+  <title>Rina Sato | Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+
+  <header class="site-header">
+    <a class="site-logo" href="#top" aria-label="ページ上部へ戻る">
+      <span class="site-logo__mark" aria-hidden="true"></span>
+      <span>RINA SATO</span>
+    </a>
+
+    <nav class="page-nav" aria-label="ページ内ナビゲーション">
+      <a href="#about"><span>01</span> About</a>
+      <a href="#profile"><span>02</span> Profile</a>
+      <a href="#books"><span>03</span> Books</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__eyebrow">
+        <span>SELF INTRODUCTION</span>
+        <span>DESIGN / BOOKS / LANGUAGE</span>
+      </div>
+
+      <h1 class="hero__title" id="hero-title">
+        <span class="hero__title-line">HELLO,</span>
+        <span class="hero__title-line hero__title-line--indent">I'M SATO.</span>
+      </h1>
+
+      <p class="hero__copy">佐藤です。</p>
+
+      <a class="hero__scroll" href="#about">
+        <span>SCROLL</span>
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+
+      <p class="hero__index" aria-hidden="true">00</p>
+    </section>
+
+    <section class="section section--about" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="section-heading__number">01</p>
+        <div>
+          <p class="section-heading__label">ABOUT ME</p>
+          <h2 id="about-title">自己紹介</h2>
+        </div>
+      </div>
+
+      <div class="about-layout">
+        <p class="about-layout__lead">佐藤です。</p>
+        <div class="about-layout__text">
+          <p>デザインを仕事にしながら、インテリアや読書を楽しんでいます。</p>
+          <p>最近は、言葉の仕組みを考える「言語学」に興味があります。</p>
+        </div>
+        <div class="about-layout__stamp" aria-hidden="true">
+          <span>S</span>
+          <small>PROFILE<br>2026</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--profile" id="profile" aria-labelledby="profile-title">
+      <div class="section-heading section-heading--light">
+        <p class="section-heading__number">02</p>
+        <div>
+          <p class="section-heading__label">STATUS</p>
+          <h2 id="profile-title">プロフィール</h2>
+        </div>
+      </div>
+
+      <div class="profile-layout">
+        <p class="profile-layout__intro">CURRENT<br>STATUS</p>
+
+        <div class="status-table" role="table" aria-label="プロフィール情報">
+          <div class="status-table__row" role="row">
+            <div class="status-table__label" role="rowheader">名前</div>
+            <div class="status-table__value" role="cell">さとりな</div>
+          </div>
+          <div class="status-table__row" role="row">
+            <div class="status-table__label" role="rowheader">職種</div>
+            <div class="status-table__value" role="cell">デザイナ</div>
+          </div>
+          <div class="status-table__row" role="row">
+            <div class="status-table__label" role="rowheader">趣味</div>
+            <div class="status-table__value" role="cell">インテリア、読書</div>
+          </div>
+          <div class="status-table__row" role="row">
+            <div class="status-table__label" role="rowheader">好きなもの</div>
+            <div class="status-table__value" role="cell">森博嗣</div>
+          </div>
+          <div class="status-table__row" role="row">
+            <div class="status-table__label" role="rowheader">最近ハマっていること</div>
+            <div class="status-table__value" role="cell">言語学</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--books" id="books" aria-labelledby="books-title">
+      <div class="section-heading">
+        <p class="section-heading__number">03</p>
+        <div>
+          <p class="section-heading__label">FAVORITE BOOKS</p>
+          <h2 id="books-title">森博嗣の本</h2>
+        </div>
+      </div>
+
+      <div class="books-intro">
+        <p class="books-intro__lead">THREE<br>BOOKS</p>
+        <p>下の番号または左右の矢印を選ぶと、表紙を切り替えられます。</p>
+      </div>
+
+      <div class="slider" aria-label="森博嗣の書籍画像スライダー">
+        <input class="slider__toggle" type="radio" name="book-slider" id="book-1" checked>
+        <input class="slider__toggle" type="radio" name="book-slider" id="book-2">
+        <input class="slider__toggle" type="radio" name="book-slider" id="book-3">
+
+        <div class="slider__viewport">
+          <div class="slider__decor slider__decor--top" aria-hidden="true">MORI HIROSHI / S&amp;M SERIES</div>
+          <div class="slider__decor slider__decor--side" aria-hidden="true">SELECTED BOOKS</div>
+
+          <figure class="slide slide--1">
+            <div class="slide__image-wrap">
+              <img src="https://kodanshabunko.com/content/files/morihiroshi/series/images/Series_SandM/9784062639248.jpg" alt="森博嗣『すべてがFになる』の書影" width="480" height="684">
+            </div>
+            <figcaption>
+              <span class="slide__number">01</span>
+              <span class="slide__title">すべてがFになる</span>
+              <span class="slide__en">THE PERFECT INSIDER</span>
+            </figcaption>
+          </figure>
+
+          <figure class="slide slide--2">
+            <div class="slide__image-wrap">
+              <img src="https://kodanshabunko.com/content/files/morihiroshi/series/images/Series_SandM/9784062730976.jpg" alt="森博嗣『今はもうない』の書影" width="480" height="684" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="slide__number">02</span>
+              <span class="slide__title">今はもうない</span>
+              <span class="slide__en">SWITCH BACK</span>
+            </figcaption>
+          </figure>
+
+          <figure class="slide slide--3">
+            <div class="slide__image-wrap">
+              <img src="https://kodanshabunko.com/content/files/morihiroshi/series/images/Series_SandM/9784062732949.jpg" alt="森博嗣『有限と微小のパン』の書影" width="480" height="684" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="slide__number">03</span>
+              <span class="slide__title">有限と微小のパン</span>
+              <span class="slide__en">THE PERFECT OUTSIDER</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="slider__arrows" aria-label="前後の画像へ移動">
+          <div class="slider__arrow-set slider__arrow-set--1">
+            <label class="slider__arrow" for="book-3" title="前の画像へ"><span aria-hidden="true">←</span><span class="sr-only">前の画像へ</span></label>
+            <label class="slider__arrow" for="book-2" title="次の画像へ"><span aria-hidden="true">→</span><span class="sr-only">次の画像へ</span></label>
+          </div>
+          <div class="slider__arrow-set slider__arrow-set--2">
+            <label class="slider__arrow" for="book-1" title="前の画像へ"><span aria-hidden="true">←</span><span class="sr-only">前の画像へ</span></label>
+            <label class="slider__arrow" for="book-3" title="次の画像へ"><span aria-hidden="true">→</span><span class="sr-only">次の画像へ</span></label>
+          </div>
+          <div class="slider__arrow-set slider__arrow-set--3">
+            <label class="slider__arrow" for="book-2" title="前の画像へ"><span aria-hidden="true">←</span><span class="sr-only">前の画像へ</span></label>
+            <label class="slider__arrow" for="book-1" title="次の画像へ"><span aria-hidden="true">→</span><span class="sr-only">次の画像へ</span></label>
+          </div>
+        </div>
+
+        <div class="slider__pagination" aria-label="表示する画像を選択">
+          <label for="book-1"><span>01</span></label>
+          <label for="book-2"><span>02</span></label>
+          <label for="book-3"><span>03</span></label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+    <p>RINA SATO / SELF INTRODUCTION</p>
+  </footer>
+</body>
+</html>
